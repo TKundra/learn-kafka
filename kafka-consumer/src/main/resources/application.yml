@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: lk-group-1
+      properties:
+        spring:
+          json:
+            trusted:
+              packages : com.learning.kafka_consumer.dto
